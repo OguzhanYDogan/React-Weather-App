@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("arkaplan.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Poiret One';
+    font-weight: 900;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    height: 60%;
+    padding: 20px 0;
+}
+
+.info {
+    height: 40%;
+}
+
+.sicaklik {
+    width: 20%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    font-size: 4rem;
+    padding: 5px;
+    border-radius: 0 0 0 10px;
+}
+
+.bilgi {
+    width: 40%;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.tarih {
+    width: 41%;
+    background-color: darkslategray;
+    color: white;
+    border-radius: 0 0 10px 0;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.resim {
+    object-fit: contain;
+}
+
+.ara {
+    background-color: #092029;
+    overflow: hidden;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+
+.ara:hover {
+    background-color: rgb(67, 116, 116);
+}
+
+.kart {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.kart:hover {
+    background-color: rgb(114, 184, 241);
+}
