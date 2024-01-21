@@ -32,27 +32,19 @@ span {
     align-items: center;
 }
 
-.icon {
-    height: 60%;
-    padding: 20px 0;
-}
+
 
 .info {
     height: 40%;
 }
 
 .sicaklik {
-    width: 20%;
     background-color: black;
     color: white;
-    overflow: hidden;
-    font-size: 4rem;
-    padding: 5px;
-    border-radius: 0 0 0 10px;
+    font-size: 3.5rem;
 }
 
 .bilgi {
-    width: 40%;
     background-color: black;
     color: white;
     text-transform: capitalize;
@@ -60,16 +52,9 @@ span {
 }
 
 .tarih {
-    width: 41%;
     background-color: darkslategray;
     color: white;
-    border-radius: 0 0 10px 0;
-    font-size: 1.2rem;
-    white-space: nowrap;
-}
-
-.resim {
-    object-fit: contain;
+    font-size: 1.7rem;
 }
 
 .ara {
@@ -87,12 +72,16 @@ span {
 }
 
 .kart {
-    background-color: white;
-    border-radius: 10px;
-    border: none;
-    text-align: center;
+    background-color: rgb(12, 38, 50);
 }
 
 .kart:hover {
     background-color: rgb(114, 184, 241);
+}
+
+.ortali {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

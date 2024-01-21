@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css';
 import axios from 'axios';
-import { Container, Form, InputGroup } from 'react-bootstrap';
+import { Col, Container, Form, InputGroup, Row } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
@@ -46,19 +46,21 @@ function App() {
         </Form>
         <ToastContainer />
         {bilgi &&
-          <div className='kart mt-5'>
-            <div className='icon'>
-              <img variant="top" className='resim' src={`https://openweathermap.org/img/wn/${bilgi.icon}@2x.png`} />
+          <Row className='mt-5 rounded overflow-hidden text-center'>
+            <Col xs={12} className='kart ortali py-3'>
+              <img src={`https://openweathermap.org/img/wn/${bilgi.icon}@2x.png`} />
 
-            </div>
-
-            <div className='info d-flex'>
-              <span className='sicaklik'>{Math.round(bilgi.temp)}&deg;</span>
-              <span className='bilgi'>{bilgi.description} <br /> {bilgi.name}, {bilgi.country}</span>
-              <span className='tarih'>{new Date().toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', weekday: 'long' })}</span>
-            </div>
-
-          </div>
+            </Col>
+            <Col xs={6} sm={4} className='sicaklik ortali'>{Math.round(bilgi.temp)}&deg;
+            </Col>
+            <Col xs={6} sm={4} className='bilgi ortali fs-4 py-3'>
+              <div>{bilgi.description}</div>
+              <div>{bilgi.name}, {bilgi.country}</div>
+            </Col>
+            <Col xs={12} sm={4} className='ortali tarih py-3'>
+              {new Date().toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', weekday: 'long' })}
+            </Col>
+          </Row>
         }
       </Container>
     </>
